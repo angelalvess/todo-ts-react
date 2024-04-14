@@ -14,7 +14,7 @@ export const Area = styled.div`
 
 export const Header = styled.h1`
   color: #fff;
-  font-size: 24px;
+  font-size: 32px;
   text-align: center;
   margin: 0;
   padding: 0;
