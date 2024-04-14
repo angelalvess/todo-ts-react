@@ -1,11 +1,7 @@
-import { styled, StyleFunction } from 'styled-components';
+import styled from 'styled-components';
 
-interface ContainerProps {
-  done: boolean;
-}
-
-export const Container: StyleFunction<ContainerProps> = styled.div(
-  ({ done }: ContainerProps) =>
+export const Container = styled.div(
+  () =>
     `
   display: flex;
   background-color: #20212c;
@@ -22,7 +18,7 @@ export const Container: StyleFunction<ContainerProps> = styled.div(
 
   label {
     color: #ccc;
-    text-decoration: ${done ? 'line-through' : 'initial'};
+    
   }
 `
 );
